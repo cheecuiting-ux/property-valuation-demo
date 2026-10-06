@@ -25,8 +25,8 @@ export default function App() {
   // SLA routing state
   const [activeRoute, setActiveRoute] = useState<RouteResult | null>(null);
 
-  // Map Basemap
-  const [mapBasemap, setMapBasemap] = useState<'onemap_light' | 'dark' | 'streets'>('dark');
+  // Map Basemap (Singapore SLA OneMap)
+  const [mapBasemap] = useState<'onemap_light'>('onemap_light');
 
   // View Layout: 'split' | 'map_only' | 'list_only'
   const [viewMode, setViewMode] = useState<'split' | 'map' | 'list'>('split');
@@ -181,8 +181,6 @@ export default function App() {
       {/* Top Header */}
       <Header
         analytics={analytics}
-        mapBasemap={mapBasemap}
-        onBasemapChange={setMapBasemap}
         onOpenSlaModal={() => setShowSlaStatusModal(true)}
         onOpenSoraModal={() => {
           setSoraPlannerMode('purchase');
