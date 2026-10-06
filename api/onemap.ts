@@ -338,3 +338,7 @@ export async function handleTokenMint(req: Request, res: Response) {
     });
   }
 }
+
+// Re-export Data.gov.sg HDB datastore search and metadata for unified OneMap & Government Data service
+export { handleHdbResale as handleHdbDatastoreSearch, handleHdbMetadata as handleHdbDatasetMetadata } from './hdb.ts';
+

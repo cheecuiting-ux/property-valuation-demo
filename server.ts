@@ -35,6 +35,8 @@ async function startServer() {
   app.get('/api/onemap/search', handleSearch);
   app.get('/api/onemap/revgeocode', handleRevGeocode);
   app.get('/api/onemap/route', handleRouting);
+  app.get('/api/onemap/hdb-search', handleHdbResale);
+  app.get('/api/onemap/hdb-metadata', handleHdbMetadata);
 
   // Property Transactions API & HDB Live Dataset
   app.get('/api/transactions', handleTransactions);
