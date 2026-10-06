@@ -1,0 +1,10 @@
+{
+  "name": "SG GeoProp - Singapore Property Geolocation & Market Analytics",
+  "description": "Interactive geolocation detector and residential market intelligence marrying last sale transactions of Singapore Condominiums and HDBs with SLA OneMap data.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
